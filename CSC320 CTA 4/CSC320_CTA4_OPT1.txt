@@ -1,0 +1,58 @@
+// Add the Scanner function under the while loop
+// Set the loop to iterate until the list reaches the max length(5)
+// Initialize variables for Total, Average, Max, Min and Total + 20% interest
+// Use if statements for Max, Min
+// Total, average, total + interest can be used in a cascading fashion
+// Use a for loop to iterate over the list for total, average, and interest
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+enum numbersLength {
+    ONE(1), TWO(2), THREE(3), FOUR(4), FIVE(5)
+}
+
+public class CSC320_CTA4_OPT1 {
+    
+    public static void main (String[] args) {
+        Scanner userInput = new Scanner (System.in);
+        System.out.print("Please enter five decimal numbers: ");
+        float newNumber = userInput.nextFloat();
+
+        private int marker;
+        private numbersLength(int marker) {
+        this.marker = marker;
+        }
+
+        numbersLength maxLength = numbersLength.FIVE;
+        ArrayList<Float> userNumbers = new ArrayList<Float>();
+        int counter = 0;
+        float numbersTotal = 0;
+        float numbersAverage = 0;
+        float numbersMax = -99999;
+        float numbersMin = 99999;
+        float numbersInterest = 0;
+
+        while(userNumbers < maxLength) {
+            if (newNumber >= -99999) {
+                userNumbers.add(newNumber);
+                else {
+                    System.out.println("Your number is too low, try again.");
+                }
+            }
+            for(float userNumbers; userNumbers < maxLength; counter++) {
+                numbersTotal = numbersTotal + userNumbers;
+            }
+            numberAverage = numbersTotal / maxLength;
+            numbersInterest = numbersTotal + (numbersTotal *.2);
+                
+            if (newNumber > numbersMax) {
+                numbersMax = newNumber;
+            }
+            if (newNumber < numbersMin) {
+                numbersMin = newNumber;
+            }
+        }
+    }
+}
+
